@@ -136,7 +136,7 @@
                 reception, your registration will be completed and you will receive a loyalty card which you will use
                 for our services.</p>
         </div>
-        <div class="">
+        <div class="flex flex-col justify-center items-center">
             <div class="pb-12">
                 <div class="flex">
                     <!-- Container cha -->
@@ -402,15 +402,21 @@
         </div>
     </footer>
 
-    <div class="w-[155] h-[715] top-[1120px] left-[67px] opacity-[25%] absolute">
+    <div class="w-[155] h-[715] top-[1120px] left-[67px] opacity-[25%] absolute hidden lg:block">
         <img src="./assets/images/FloatingLogo.png" alt="FloatingLogo">
     </div>
-    <div class="w-[264.75px] h-[210px] top-[575px] left-[625px] absolute z-10">
-        <img src="./assets/images/Shadow.png" alt="Shadow">
+
+    <!-- Shadow -->
+    <div class="w-[264.75px] h-[210px] absolute top-[575px] left-1/2 -translate-x-1/2 z-10">
+        <img src="./assets/images/Shadow.png" alt="Shadow" class="w-full h-auto">
     </div>
-    <a href="https://booking.funarenacheb.cz/" class="w-[264.75px] h-[65] top-[662px] left-[625px] absolute z-20">
-        <img src="./assets/images/ButtonLink.png" alt="button_link">
+    
+    <!-- Button link -->
+    <a href="https://booking.funarenacheb.cz/" 
+       class="lg:w-[264.75px] lg:h-[65px] absolute lg:top-[662px] sm:top-[680px] top-[690px] left-1/2 -translate-x-1/2 z-20">
+        <img src="./assets/images/ButtonLink.png" alt="button_link" class="lg:w-full sm:w-52 w-40 h-auto">
     </a>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         fetch('components/header.html')
